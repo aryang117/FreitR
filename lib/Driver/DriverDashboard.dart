@@ -32,7 +32,9 @@ class DriverDashboard extends StatelessWidget {
                     Text('The Map will appear once you a job'),
                     FlatButton(
                       color: Theme.of(context).primaryColor,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).pushNamed('/driverjobsearch');
+                      },
                       child: Text(
                         'Browse Jobs',
                         style: _buttonTextStyle,

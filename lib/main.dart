@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'dart:io';
+import 'package:flutter/foundation.dart';
+
 import 'Client/ClientDashboard.dart';
 import 'Client/ClientJobHistory.dart';
 import 'Client/ClientJobPage.dart';
@@ -8,14 +11,62 @@ import 'Client/ClientProfile.dart';
 import 'Client/ClientRegister.dart';
 import 'Client/ClientLogin.dart';
 
-import 'package:uberfreight/Driver/DriverLogin.dart';
-import 'package:uberfreight/Driver/DriverRegister.dart';
-import 'package:uberfreight/Driver/DriverDashboard.dart';
-import 'package:uberfreight/Driver/DriverJobSearch.dart';
+import 'Driver/DriverLogin.dart';
+import 'Driver/DriverRegister.dart';
+import 'Driver/DriverDashboard.dart';
+import 'Driver/DriverJobSearch.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  if (kIsWeb) runApp(MyWebApp()); //Web Code
+  if (Platform.isAndroid) runApp(MyAndroidApp()); //Android Code
+}
 
-class MyApp extends StatelessWidget {
+class MyWebApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primaryColor: Colors.black,
+        backgroundColor: Colors.blueGrey[50],
+      ),
+      home: MyWebAppThing()
+    );
+  }
+}
+
+
+class MyWebAppThing extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      routes: {
+        '/clientsignin': (context) => ClientSignIn(),
+        '/clientdashboard': (context) => ClientDashBoard(),
+        '/clientregistration': (context) => ClientRegistration(),
+        '/clientprofile': (context) => ClientProfile(),
+        '/clientpostjob': (context) => ClientPostJob(),
+        '/clientjobhistory': (context) => ClientJobHistory(),
+        '/clientjobpage': (context) => ClientJobPage(),
+        '/driversignin': (context) => DriverSignIn(),
+        '/driverregistration': (context) => DriverRegistraition(),
+        '/driverdashboard': (context) => DriverDashboard(),
+        '/driverjobsearch': (context) => DriverJobSearch(),
+      },
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primaryColor: Colors.black,
+        backgroundColor: Colors.blueGrey[50],
+      ),
+      home:Scaffold(
+      body: Center(child: Text('hehe')),
+    ));
+  }
+}
+
+class MyAndroidApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

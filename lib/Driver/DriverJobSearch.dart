@@ -23,11 +23,12 @@ class DriverJobSearch extends StatelessWidget {
         elevation: 0,
       ),
       body: InkWell(
+        splashColor: Theme.of(context).splashColor,
         onTap: () {
-          Navigator.of(context).pushNamed('/driverjobsearch');
+          Navigator.of(context).popAndPushNamed('/driverjobsearch');
         },
         onLongPress: () {
-          Navigator.of(context).pushNamed('/driverjobsearch');
+          Navigator.of(context).popAndPushNamed('/driverjobsearch');
         },
         child: SingleChildScrollView(
           scrollDirection: Axis.vertical,
