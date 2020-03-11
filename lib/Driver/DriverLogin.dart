@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'package:google_sign_in/google_sign_in.dart';
+
+GoogleSignIn _googleSignIn = new GoogleSignIn();
+
 class DriverSignIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -48,9 +52,34 @@ class DriverSignIn extends StatelessWidget {
                 ),
               ),
             ),
+            Container(
+              padding: new EdgeInsets.only(top: 20),
+              alignment: Alignment.bottomCenter,
+              child: MaterialButton(
+                minWidth: MediaQuery.of(context).size.width - 20,
+                height: 50,
+                elevation: 0,
+                color: Colors.black,
+                onPressed: () {
+                  _handleSignIn();
+                },
+                child: Text(
+                  'Sign In With Google',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+            ),
           ],
         ),
       ),
     );
+  }
+}
+
+Future<void> _handleSignIn() async {
+  try {
+    await _googleSignIn.signIn();
+  } catch (error) {
+    print(error);
   }
 }
