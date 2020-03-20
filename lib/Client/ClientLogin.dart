@@ -8,6 +8,14 @@ GoogleSignIn _googleSignIn = new GoogleSignIn();
 class ClientSignIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Future<void> _handleSignIn() async {
+      try {
+        await _googleSignIn.signIn();
+      } catch (error) {
+        print(error);
+      }
+    }
+
     return Scaffold(
       body: Center(
         child: Column(
@@ -77,13 +85,5 @@ class ClientSignIn extends StatelessWidget {
         ),
       ),
     );
-  }
-}
-
-Future<void> _handleSignIn() async {
-  try {
-    await _googleSignIn.signIn();
-  } catch (error) {
-    print(error);
   }
 }

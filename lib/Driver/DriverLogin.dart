@@ -1,12 +1,20 @@
 import 'package:flutter/material.dart';
 
-import 'package:google_sign_in/google_sign_in.dart';
-
-GoogleSignIn _googleSignIn = new GoogleSignIn();
+import 'package:uberfreight/auth.dart';
 
 class DriverSignIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // Future<void> _handleSignIn() async {
+    //   try {
+    //     await _googleSignIn.signIn();
+    //     Navigator.of(context).pushNamed('/driverdashboard');
+    //   } catch (error) {
+    //     print(error);
+    //     Navigator.of(context).pushNamed('/driverdashboard');
+    //   }
+    // }
+
     return Scaffold(
       body: Center(
         child: Column(
@@ -61,7 +69,8 @@ class DriverSignIn extends StatelessWidget {
                 elevation: 0,
                 color: Colors.black,
                 onPressed: () {
-                  _handleSignIn();
+                  signInWithGoogle();
+                  Navigator.of(context).pushNamed('/driverdashboard');
                 },
                 child: Text(
                   'Sign In With Google',
@@ -73,13 +82,5 @@ class DriverSignIn extends StatelessWidget {
         ),
       ),
     );
-  }
-}
-
-Future<void> _handleSignIn() async {
-  try {
-    await _googleSignIn.signIn();
-  } catch (error) {
-    print(error);
   }
 }
