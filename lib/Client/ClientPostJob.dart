@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
+// import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 
 final GlobalKey<FormState> _formKey1 = GlobalKey<FormState>();
 
@@ -136,17 +136,17 @@ class _ClientJobFormState extends State<ClientJobForm> {
                     style: new TextStyle(color: Colors.white),
                   ),
                   onPressed: () {
-                    DatePicker.showDateTimePicker(context,
-                        showTitleActions: true,
-                        minTime: DateTime.now(),
-                        maxTime: DateTime(
-                            DateTime.now().year, DateTime.now().month + 2),
-                        onChanged: (date) {
-                      selectedMonth = date.month;
-                      selectedDay = date.day;
-                      print(selectedMonth);
-                      print(selectedDay);
-                    });
+                    // DatePicker.showDateTimePicker(context,
+                    //     showTitleActions: true,
+                    //     minTime: DateTime.now(),
+                    //     maxTime: DateTime(
+                    //         DateTime.now().year, DateTime.now().month + 2),
+                    //     onChanged: (date) {
+                    //   selectedMonth = date.month;
+                    //   selectedDay = date.day;
+                    //   print(selectedMonth);
+                    //   print(selectedDay);
+                    // });
                   },
                 ),
               ),
@@ -161,15 +161,15 @@ class _ClientJobFormState extends State<ClientJobForm> {
                     style: new TextStyle(color: Colors.white),
                   ),
                   onPressed: () {
-                    DatePicker.showDatePicker(context,
-                        showTitleActions: true,
-                        minTime: DateTime.now(),
-                        maxTime: DateTime(
-                          DateTime.now().year,
-                          selectedMonth + 2,
-                          selectedDay,
-                        ),
-                        onChanged: (date) {});
+                    // DatePicker.showDatePicker(context,
+                    //     showTitleActions: true,
+                    //     minTime: DateTime.now(),
+                    //     maxTime: DateTime(
+                    //       DateTime.now().year,
+                    //       selectedMonth + 2,
+                    //       selectedDay,
+                    //     ),
+                    //     onChanged: (date) {});
                   },
                 ),
               ),
