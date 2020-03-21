@@ -23,7 +23,9 @@ Future<String> signInWithGoogle() async {
 
     final FirebaseUser currentUser = await _auth.currentUser();
     assert(user.uid == currentUser.uid);
-   return 'signInWithGoogle succeeded: $user'; 
+    if (user == null) print('not signed in');
+    else print('signed in' + user.uid);
+    return 'signInWithGoogle succeeded: $user';
   } catch (error) {
     print(error);
   }
