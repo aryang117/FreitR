@@ -11,7 +11,7 @@ The idea with this app was to create a platform for your average person to conne
 
 This app was created for a Project Exhibition held in 2019-2020.
 
-The general workflow of the app is [here](https://whimsical.com/project-exhibition-review-1-app-flowchart-WkBbxCB1ZVCzKatnn5iByt).
+The general workflow of the app is [here](https://whimsical.com/project-exhibition-review-1-app-flowchart-WkBbxCB1ZVCzKatnn5iByt@7YNFXnKbYmcV8qgaMBNvs).
 
 ### Goals
   The goal with this app was to provide the following functionality to the user -
