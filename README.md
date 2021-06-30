@@ -1,13 +1,21 @@
 # FreitR
+## Table of Contents
+* [Overview](#overview)
+* [Building the Project](#building-the-project)
+* [Preview](#preview-gifs-and-screenshots)
+* [Modules](#modules)
+* [What did I learn from this](#what-did-i-learn-from-this)
 
 ## Overview
-The idea with this app was to create a platform for your average person to connect with logistic carrier, whether it be a trucker or just an average person with a car who wishes to earn money by transporting stuff from one play to another, without the need of a middle-man or a company to handle the interaction. 
+The idea with this app was to create a platform for your average person to connect with logistic carrier, whether it be a trucker or just an average person with a car who wishes to earn money by transporting stuff from one place to another, without the need of a middle-man or a company to handle the interaction. 
 
 This app was created for a Project Exhibition held in 2019-2020.
 
+The general workflow of the app is [here](https://whimsical.com/project-exhibition-review-1-app-flowchart-WkBbxCB1ZVCzKatnn5iByt@7YNFXnKbYmcV8qgaMBNvs).
+
 ### Goals
-  The goal for this app was to -
-  - Have User Accounts, so that users can be authenticated and verified, including profiles for the said users so that they can provide more details about themselves
+  The goal with this app was to provide the following functionality to the user -
+  - User Accounts, so that users can be authenticated and verified, including profiles for the said users so that they can provide more details about themselves
   - User Authentication.
   - Modify their Profile.
   - Allow Users to post jobs and search for them.
