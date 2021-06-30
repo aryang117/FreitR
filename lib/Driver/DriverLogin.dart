@@ -15,6 +15,8 @@ class DriverSignIn extends StatelessWidget {
     //   }
     // }
 
+    AuthService authService = new AuthService();
+
     return Scaffold(
       body: Center(
         child: Column(
@@ -69,7 +71,7 @@ class DriverSignIn extends StatelessWidget {
                 elevation: 0,
                 color: Colors.black,
                 onPressed: () {
-                  signInWithGoogle();
+                  authService.signInWithGoogle();
                   Navigator.of(context).pushNamed('/driverdashboard');
                 },
                 child: Text(
