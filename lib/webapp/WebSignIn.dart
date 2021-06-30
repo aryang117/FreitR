@@ -41,8 +41,7 @@ class _SignIn extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
                 Text(
-                  'Driver' + "→",
-                  textAlign: TextAlign.end,
+                  'Driver',
                   style: new TextStyle(
                       color: Colors.white,
                       fontSize:
