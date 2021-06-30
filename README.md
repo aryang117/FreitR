@@ -8,7 +8,10 @@
 
 ## Overview
 The idea with this app was to create a platform for your average person to connect with logistic carrier, whether it be a trucker or just an average person with a car who wishes to earn money by transporting stuff from one place to another, without the need of a middle-man or a company to handle the interaction. 
+
 This app was created for a Project Exhibition held in 2019-2020.
+
+The general workflow of the app is [here](https://whimsical.com/project-exhibition-review-1-app-flowchart-WkBbxCB1ZVCzKatnn5iByt).
 
 ### Goals
   The goal with this app was to provide the following functionality to the user -
