@@ -58,7 +58,13 @@ doc/api/
 *.js_
 *.js.deps
 *.js.map
+<<<<<<< HEAD
 
 #some firebase files
 
 >>>>>>> 44dcf2b7eb80a525d91d293c43b9560199a34c46
+=======
+>>>>>>> 44dcf2b7eb80a525d91d293c43b9560199a34c46
+android/app/google-services.json
+
+>>>>>>> dev
