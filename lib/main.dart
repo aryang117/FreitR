@@ -27,44 +27,42 @@ class MyWebApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primaryColor: Colors.black,
-        backgroundColor: Colors.blueGrey[50],
-      ),
-      home: MyWebAppThing()
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primaryColor: Colors.black,
+          backgroundColor: Colors.blueGrey[50],
+        ),
+        home: MyWebAppThing());
   }
 }
-
 
 class MyWebAppThing extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      routes: {
-        '/clientsignin': (context) => ClientSignIn(),
-        '/clientdashboard': (context) => ClientDashBoard(),
-        '/clientregistration': (context) => ClientRegistration(),
-        '/clientprofile': (context) => ClientProfile(),
-        '/clientpostjob': (context) => ClientPostJob(),
-        '/clientjobhistory': (context) => ClientJobHistory(),
-        '/clientjobpage': (context) => ClientJobPage(),
-        '/driversignin': (context) => DriverSignIn(),
-        '/driverregistration': (context) => DriverRegistraition(),
-        '/driverdashboard': (context) => DriverDashboard(),
-        '/driverjobsearch': (context) => DriverJobSearch(),
-      },
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primaryColor: Colors.black,
-        backgroundColor: Colors.blueGrey[50],
-      ),
-      home:Scaffold(
-      body: WebSignIn(),
-    ));
+        routes: {
+          '/clientsignin': (context) => ClientSignIn(),
+          '/clientdashboard': (context) => ClientDashBoard(),
+          '/clientregistration': (context) => ClientRegistration(),
+          '/clientprofile': (context) => ClientProfile(),
+          '/clientpostjob': (context) => ClientPostJob(),
+          '/clientjobhistory': (context) => ClientJobHistory(),
+          '/clientjobpage': (context) => ClientJobPage(),
+          '/driversignin': (context) => DriverSignIn(),
+          '/driverregistration': (context) => DriverRegistraition(),
+          '/driverdashboard': (context) => DriverDashboard(),
+          '/driverjobsearch': (context) => DriverJobSearch(),
+        },
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primaryColor: Colors.black,
+          backgroundColor: Colors.blueGrey[50],
+        ),
+        home: Scaffold(
+          body: WebSignIn(),
+        ));
   }
 }
 
