@@ -11,8 +11,8 @@ The idea with this app was to create a platform for your average person to conne
 This app was created for a Project Exhibition held in 2019-2020.
 
 ### Goals
-  The goal for this app was to -
-  - Have User Accounts, so that users can be authenticated and verified, including profiles for the said users so that they can provide more details about themselves
+  The goal with this app was to provide the following functionality to the user -
+  - User Accounts, so that users can be authenticated and verified, including profiles for the said users so that they can provide more details about themselves
   - User Authentication.
   - Modify their Profile.
   - Allow Users to post jobs and search for them.
