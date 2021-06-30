@@ -1,4 +1,10 @@
 # FreitR
+## Table of Contents
+* [Overview](#overview)
+* [Building the Project](#building-the-project)
+* [Preview](#preview-gifs-and-screenshots)
+* [Modules](#modules)
+* [What did I learn from this](#what-did-i-learn-from-this)
 
 ## Overview
 The idea with this app was to create a platform for your average person to connect with logistic carrier, whether it be a trucker or just an average person with a car who wishes to earn money by transporting stuff from one play to another, without the need of a middle-man or a company to handle the interaction. 
