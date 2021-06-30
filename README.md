@@ -42,7 +42,7 @@ Once logged in as a client, the user can -
 - View their job history
 - View / edit their profile
 
-### What did I learn from this?
+## What did I learn from this?
   Whilst working on this project, I came across some amazing things (in Flutter) and some of them are -
  - StreamProvider.
  - Firebase.
