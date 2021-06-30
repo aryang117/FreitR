@@ -1,9 +1,21 @@
 import 'package:flutter/material.dart';
 import 'ClientDashboard.dart';
 
+import 'package:google_sign_in/google_sign_in.dart';
+
+GoogleSignIn _googleSignIn = new GoogleSignIn();
+
 class ClientSignIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Future<void> _handleSignIn() async {
+      try {
+        await _googleSignIn.signIn();
+      } catch (error) {
+        print(error);
+      }
+    }
+
     return Scaffold(
       body: Center(
         child: Column(
@@ -48,6 +60,23 @@ class ClientSignIn extends StatelessWidget {
                 },
                 child: Text(
                   'Sign in',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+            ),
+            Container(
+              padding: new EdgeInsets.only(top: 20),
+              alignment: Alignment.bottomCenter,
+              child: MaterialButton(
+                minWidth: MediaQuery.of(context).size.width - 20,
+                height: 50,
+                elevation: 0,
+                color: Colors.black,
+                onPressed: () {
+                  _handleSignIn();
+                },
+                child: Text(
+                  'Sign in With Google',
                   style: TextStyle(color: Colors.white),
                 ),
               ),

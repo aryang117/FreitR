@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:uberfreight/user.dart';
 
-import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
+// import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
+
+User user = new User();
 
 final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
@@ -69,7 +72,7 @@ class RegistrationForm extends StatefulWidget {
 
 class _RegistrationFormState extends State<RegistrationForm> {
   bool _autoValidate = false;
-  String _name;
+ static String _name = user.name;
   String _email;
   String _mobile;
   int _radioValue = 0;
@@ -106,12 +109,13 @@ class _RegistrationFormState extends State<RegistrationForm> {
         Container(
           padding: new EdgeInsets.symmetric(horizontal: 30),
           child: new TextFormField(
+            initialValue: user.name,
               decoration: const InputDecoration(labelText: 'Name'),
               keyboardType: TextInputType.text,
               validator: validateName,
               enabled: isEditable,
               onSaved: (String val) {
-                _name = val;
+                _name = _name;
               }),
         ),
         Container(
@@ -151,11 +155,11 @@ class _RegistrationFormState extends State<RegistrationForm> {
               style: new TextStyle(color: Colors.white),
             ),
             onPressed: () {
-              DatePicker.showDatePicker(context,
-                  showTitleActions: true,
-                  minTime: DateTime(1920, 01, 01),
-                  maxTime: DateTime.now(),
-                  onChanged: (date) {});
+              // DatePicker.showDatePicker(context,
+              //     showTitleActions: true,
+              //     minTime: DateTime(1920, 01, 01),
+              //     maxTime: DateTime.now(),
+              //     onChanged: (date) {});
             },
           ),
         ),

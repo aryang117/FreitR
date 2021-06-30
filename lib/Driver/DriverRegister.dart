@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
+// import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 
 final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
@@ -140,11 +140,11 @@ class _RegistrationFormState extends State<RegistrationForm> {
               style: new TextStyle(color: Colors.white),
             ),
             onPressed: () {
-              DatePicker.showDatePicker(context,
-                  showTitleActions: true,
-                  minTime: DateTime(1920, 01, 01),
-                  maxTime: DateTime.now(),
-                  onChanged: (date) {});
+              // DatePicker.showDatePicker(context,
+              //     showTitleActions: true,
+              //     minTime: DateTime(1920, 01, 01),
+              //     maxTime: DateTime.now(),
+              //     onChanged: (date) {});
             },
           ),
         ),
