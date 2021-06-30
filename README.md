@@ -1,16 +1,58 @@
-# uberfreight
+# FreitR
 
-A new Flutter project.
+## Overview
+The idea with this app was to create a platform for your average person to connect with logistic carrier, whether it be a trucker or just an average person with a car who wishes to earn money by transporting stuff from one play to another, without the need of a middle-man or a company to handle the interaction. 
+This app was created for a Project Exhibition held in 2019-2020.
 
-## Getting Started
+### Goals
+  The goal for this app was to -
+  - Have User Accounts, so that users can be authenticated and verified, including profiles for the said users so that they can provide more details about themselves
+  - User Authentication.
+  - Modify their Profile.
+  - Allow Users to post jobs and search for them.
+  - View their Job History.
 
-This project is a starting point for a Flutter application.
+## Building the Project
+To build this project, please make sure that you have flutter installed and once you're ready, 
+- navigate to the Project root directory and,
+- run ``flutter run`` command in your terminal.
 
-A few resources to get you started if this is your first Flutter project:
+## Preview GIFS and ScreenShots
+<div>
+<img src="/ssGifs/sample.gif" alt="sample" width="25%" height="25%"/>
+</div>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Modules
+### Login
+Allows the user to login as a Driver or as a Client. The user can login via e-mail (and password) or directly via Google Sign In. 
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+All of the login mechanism is being handled by Firebase Authenitcation system. 
+
+### Driver
+Once logged in as a driver, the user can -
+- View route of the current job
+- Search for Nearby Jobs 
+- View their job history
+- View / edit their profile
+ 
+### Client
+Once logged in as a client, the user can -
+- View the progress of the delivery
+- Post a new job for drivers to take 
+- View their job history
+- View / edit their profile
+
+### What did I learn from this?
+  Whilst working on this project, I came across some amazing things (in Flutter) and some of them are -
+ - StreamProvider.
+ - Firebase.
+ - Cloud Firestore.
+ - Firebase Authentiication
+ - State Management.
+ - Future (FutureBuilder, Future Functions).
+ - Async/Await.
+ - Dart DevTools.
+ - Custom Widgets (Modifying already existing material widgets).
+ - 3rd Party Dependencies.
+
+ As I continue to work on this project, I will keep learning new things.
